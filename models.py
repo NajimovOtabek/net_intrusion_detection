@@ -258,7 +258,7 @@ class Classifier:
         self.reg= reg
         self.runs_dir = runs_dir
         self.seed = seed
-        #self.device = 'cuda'
+        self.device = 'cuda'
         self.logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.DEBUG)
         file_handler = logging.FileHandler('training.log')
